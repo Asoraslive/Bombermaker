@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Base path: 'D:/Programme/Unity/2020.3.3f1/Editor/Data', plugins path 'D:/Programme/Unity/2020.3.3f1/Editor/Data/PlaybackEngines'
+=======
+Base path: 'C:/data/apps/unity-editor/2020.3.3f1/Editor/Data', plugins path 'C:/data/apps/unity-editor/2020.3.3f1/Editor/Data/PlaybackEngines'
+>>>>>>> paul-branch
 Cmd: initializeCompiler
 
 Cmd: shutdown

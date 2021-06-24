@@ -56,10 +56,10 @@ public class Entity : MonoBehaviour
         WorldTile destinationTile = inhabitedTile.FindNeighbourTileByOffset(v);
 
         // EXIT IF THERE IS NO TILE TO MOVE TO
-        if(destinationTile == null){ Debug.Log("No tile to move to"); return;}
+        if(destinationTile == null){ return;}
 
         // EXIT IF THERE IS AN OBSTACLE
-        if(destinationTile.IsBlocked()){ Debug.Log("Destination Tile is blocked"); return; }
+        if(destinationTile.IsBlocked()){ return; }
 
         // EXIT IF ENTITY IS FROZEN
         if(isFrozen){ return; }
@@ -71,7 +71,7 @@ public class Entity : MonoBehaviour
     {
         // DISABLE INPUT
         isMoving = true;
-        InputController.instance.DisableInput();
+        if(this is Player) InputController.instance.DisableInput();
 
         // EXECUTE MOVEMENT (LERP)
         var startPosition = this.transform.position;
@@ -94,8 +94,9 @@ public class Entity : MonoBehaviour
         // SET NEW INHABITED TILE
         Inhabit(destinationTile);
 
-        // ENABLE INPUT
-        InputController.instance.EnableInput();
+        // ENABLE NEW MOVEMENT
+        isMoving = false;
+        if(this is Player) InputController.instance.EnableInput();
         yield return null;
     }
 

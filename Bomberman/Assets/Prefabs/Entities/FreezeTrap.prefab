@@ -101,7 +101,7 @@ MonoBehaviour:
   isFreezable: 0
   isFrozen: 0
   speed: 1
-  explodeDelay: 2
+  explodeDelay: 1.8
   explodeRadius: 2
   freezeDuration: 3
   freezePrefab: {fileID: 1440641589785580, guid: 98295232285f1b448b6cd3a849cd1ac6,

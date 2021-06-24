@@ -94,7 +94,11 @@ public class Bomb : Entity
                     bool hasHit = false;
                     foreach(Entity e in targetTile.inhabitants)
                     {
-                        if(e.isDestructible){destroyees.Add(e); hasHit = true; }
+                        if(e.isDestructible)
+                        {
+                            destroyees.Add(e);
+                            if(e is DestructibleBox) hasHit = true; 
+                        }
                     }
 
                     // INCREMENT HITS 

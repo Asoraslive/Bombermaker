@@ -8,6 +8,8 @@ public class Entity : MonoBehaviour
     public bool isObstacle = false;
     public bool isMoving = false;
     public bool isDestructible = false;
+    public bool isFreezable = false;
+    public bool isFrozen = false;
     public float speed = 1f;
 
 
@@ -49,12 +51,6 @@ public class Entity : MonoBehaviour
         return mates;
     }
 
-    public void Move(WorldTile destinationTile)
-    {
-        if (destinationTile == null) return;
-        StartCoroutine(MoveRoutine(destinationTile));
-    }
-
     public void Move(Vector3Int v)
     {
         WorldTile destinationTile = inhabitedTile.FindNeighbourTileByOffset(v);
@@ -64,6 +60,9 @@ public class Entity : MonoBehaviour
 
         // EXIT IF THERE IS AN OBSTACLE
         if(destinationTile.IsBlocked()){ Debug.Log("Destination Tile is blocked"); return; }
+
+        // EXIT IF ENTITY IS FROZEN
+        if(isFrozen){ return; }
 
         StartCoroutine(MoveRoutine(destinationTile));
     }
@@ -82,11 +81,13 @@ public class Entity : MonoBehaviour
 
         while (t < 1f) 
         {
+            // LERP
             t += Time.deltaTime * this.speed;
             if (t > lerpTime) { t = lerpTime; }
-    
-
             this.transform.position = Vector3.Lerp(startPosition, endPosition, t);
+
+            // HALT IF FROZEN
+            while(isFrozen){ yield return null; }
             yield return null;
         }
 
@@ -101,5 +102,21 @@ public class Entity : MonoBehaviour
     public virtual void OnMateEnter(Entity e)
     {
 
+    }
+
+    public void Freeze(float duration)
+    {
+        StartCoroutine(FreezeRoutine(duration));
+    }
+
+    public IEnumerator FreezeRoutine(float duration)
+    {
+        isFrozen = true;
+        this.GetComponent<SpriteRenderer>().color = new Color(0.2f, 0.72f, 0.78f, 1f);
+
+        yield return new WaitForSeconds(duration);
+
+        isFrozen = false;
+        this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
     }
 }

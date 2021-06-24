@@ -14,6 +14,7 @@ public class Player : Entity
         base.Awake();
 
         this.isDestructible = true;
+        this.isFreezable = true;
     }
 
     public void SpawnBomb()

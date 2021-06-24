@@ -22,6 +22,7 @@ public class Bomb : Entity
         
         // SET OBSTACLE
         this.isObstacle = true;
+        this.isFreezable = true;
 
         // ADD DIRECTIONS
         directions.Add(new Vector3Int(0,1,0)); // N, 0
@@ -44,6 +45,9 @@ public class Bomb : Entity
     {
         // EXPLODE DELAY
         yield return new WaitForSeconds(explodeDelay);
+
+        // FREEZE DELAY
+        while(isFrozen){ yield return null; }
 
         // PREPARE VARIABLES
         int i_range = 1;

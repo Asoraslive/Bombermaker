@@ -57,7 +57,23 @@ public class WorldTile {
 
     public List<WorldTile> FindNeighbourTilesInRadius(int radius)
     {
-        return null;
+        List<WorldTile> neighbours = new List<WorldTile>();
+        int range = 1 + 2 * radius;
+        int x_tile = posLocal.x - radius;
+        int y_tile = posLocal.y - radius;
+        for (int x = 0; x < range; x++)
+        {
+            for (int y = 0; y < range; y++)
+            {
+                Vector3Int targetTile = new Vector3Int(x + x_tile,y + y_tile,0);
+                if (GameTiles.instance.tilesLocal.ContainsKey(targetTile))
+                {
+                    neighbours.Add(GameTiles.instance.tilesLocal[targetTile]);
+                }
+            }
+        }
+
+        return neighbours;
     }
 
     public void DebugTile()

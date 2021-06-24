@@ -1,105 +1,214 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.3f1 (76626098c1c4) revision 7758432'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19041.1052; Version 2004; 64bit' Language: 'de' Physical Memory: 16334 MB
+OS: 'Windows 10 Education; OS build 19042.1052; Version 2009; 64bit' Language: 'de' Physical Memory: 16309 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.3f1\Editor\Unity.exe
+D:\Programme\Unity\2020.3.3f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Uni/ExperimentalGD/Bombermaker/Bomberman
+C:/Users/Vanessa/Documents/GitHub/Bombermaker/Bomberman
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53152
-Successfully changed project path to: D:/Uni/ExperimentalGD/Bombermaker/Bomberman
-D:/Uni/ExperimentalGD/Bombermaker/Bomberman
+60411
+Successfully changed project path to: C:/Users/Vanessa/Documents/GitHub/Bombermaker/Bomberman
+C:/Users/Vanessa/Documents/GitHub/Bombermaker/Bomberman
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 32.82 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 38.86 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.3f1 (76626098c1c4)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Uni/ExperimentalGD/Bombermaker/Bomberman/Assets
+[Subsystems] Discovering subsystems at path D:/Programme/Unity/2020.3.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Vanessa/Documents/GitHub/Bombermaker/Bomberman/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1080 Ti (ID=0x1b06)
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 770 (ID=0x1184)
     Vendor:   
-    VRAM:     11127 MB
-    Driver:   27.21.14.5671
+    VRAM:     2007 MB
+    Driver:   27.21.14.6647
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56528
+Mono path[0] = 'D:/Programme/Unity/2020.3.3f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Programme/Unity/2020.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Programme/Unity/2020.3.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56232
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001600 seconds.
+Register platform support module: D:/Programme/Unity/2020.3.3f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Programme/Unity/2020.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001271 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 25.98 ms, found 0 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 33.30 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.865 seconds
+- Completed reload, in  0.896 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000891 seconds.
+Registered in 0.002081 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.671 seconds
+- Completed reload, in  0.787 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1419 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 64.9 MB.
-System memory in use after: 65.0 MB.
+System memory in use before: 65.0 MB.
+System memory in use after: 65.1 MB.
 
 Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 1847.
-Total: 1.749600 ms (FindLiveObjects: 0.198600 ms CreateObjectMapping: 0.046300 ms MarkObjects: 1.448500 ms  DeleteObjects: 0.054600 ms)
+Total: 2.104800 ms (FindLiveObjects: 0.300500 ms CreateObjectMapping: 0.116200 ms MarkObjects: 1.620200 ms  DeleteObjects: 0.066800 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Bomberman.unity
-  artifactKey: Guid(c8346bd9d0d56c34ab9591563d43368a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bomberman.unity using Guid(c8346bd9d0d56c34ab9591563d43368a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4713b92a466d19b16bd29a91d7eee230') in 0.012993 seconds
-  Import took 0.014994 seconds .
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/Undestruc.Stone_v1-1.png
+  artifactKey: Guid(8def59b871c3bd748b2b814de52a2892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/Undestruc.Stone_v1-1.png using Guid(8def59b871c3bd748b2b814de52a2892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c73676619a965f475ff737afa9011b3') in 0.134551 seconds
+  Import took 0.136780 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000951 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.632 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1413 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 64.8 MB.
-System memory in use after: 64.9 MB.
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/Character-v2.png
+  artifactKey: Guid(c79c77c85aaabac4bb0cd21e12ce5105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/Character-v2.png using Guid(c79c77c85aaabac4bb0cd21e12ce5105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7ce54f312800779b7bfab3c998cd025') in 0.014933 seconds
+  Import took 0.018142 seconds .
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 1850.
-Total: 1.627900 ms (FindLiveObjects: 0.171300 ms CreateObjectMapping: 0.038700 ms MarkObjects: 1.392100 ms  DeleteObjects: 0.024900 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/Enemy-1.png
+  artifactKey: Guid(0a11d3c0e0a4c03468be4e9904932b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/Enemy-1.png using Guid(0a11d3c0e0a4c03468be4e9904932b5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '665f5d28fd289a3e452dd73bd82077c8') in 0.014590 seconds
+  Import took 0.018255 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/PowerUp_ExtraBombs-1.png
+  artifactKey: Guid(0830827288033224885de8d5d3f09553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/PowerUp_ExtraBombs-1.png using Guid(0830827288033224885de8d5d3f09553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53a93ea86dfbf94d784e8b1c1f3c0ab') in 0.014073 seconds
+  Import took 0.016750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/Bear_Trap-1.png
+  artifactKey: Guid(45cb605f83f5a4f46ae3cf551c894cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/Bear_Trap-1.png using Guid(45cb605f83f5a4f46ae3cf551c894cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebb5139d56f4df16df82c333017edf59') in 0.016121 seconds
+  Import took 0.020164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/PowerUp_ExtraExplo-1.png
+  artifactKey: Guid(0ad5bd440fb2fc442a5ef6cecc6610c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/PowerUp_ExtraExplo-1.png using Guid(0ad5bd440fb2fc442a5ef6cecc6610c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c52cfb42d5609b2fa11da40a46aa6aa1') in 0.013476 seconds
+  Import took 0.017364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH
+  artifactKey: Guid(2ffff26e78500ef49a1e35a8ed21b135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH using Guid(2ffff26e78500ef49a1e35a8ed21b135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d1cdb12c96bf18411e87f78c7150c0') in 0.006676 seconds
+  Import took 0.010425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/Bomb.gif
+  artifactKey: Guid(048f86d79ac4e7049bb61958886908ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/Bomb.gif using Guid(048f86d79ac4e7049bb61958886908ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf685c6f967e4de5c875e109d6244010') in 0.016296 seconds
+  Import took 0.018530 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/Freeze_Bomb_v3.gif
+  artifactKey: Guid(70a7409ed0974ef47b2a3d120e666fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/Freeze_Bomb_v3.gif using Guid(70a7409ed0974ef47b2a3d120e666fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa91173ccd4e57c535505c9870f14aa9') in 0.012484 seconds
+  Import took 0.014748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/Death_v2.gif
+  artifactKey: Guid(ca34792e6e7d6624c96200ec46ee1948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/Death_v2.gif using Guid(ca34792e6e7d6624c96200ec46ee1948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f434eb51203d6d9d30be5bc46e6fd36') in 0.012473 seconds
+  Import took 0.015667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/Enemy_death.gif
+  artifactKey: Guid(754fd093a8dc08040a2c0e6fedd57323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/Enemy_death.gif using Guid(754fd093a8dc08040a2c0e6fedd57323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e34082dcb69d8c63293d344d16f7bf3a') in 0.014093 seconds
+  Import took 0.016301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/Destruc.Stone-1.png
+  artifactKey: Guid(5ac71802a6a231648bf80abd55c47e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/Destruc.Stone-1.png using Guid(5ac71802a6a231648bf80abd55c47e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdd3d1fb20ded4b0ff358a90671c65c7') in 0.012949 seconds
+  Import took 0.015928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/PowerUp_ExtraSpeed-1.png
+  artifactKey: Guid(a3e8b4524b60e6e478367877d6c1433d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/PowerUp_ExtraSpeed-1.png using Guid(a3e8b4524b60e6e478367877d6c1433d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b1e909b3f155238df1fc1a1d8188a70') in 0.013337 seconds
+  Import took 0.015919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/Explosion-1.png
+  artifactKey: Guid(8dc7cf69f076c3a4ba43a38d96e4ceb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/Explosion-1.png using Guid(8dc7cf69f076c3a4ba43a38d96e4ceb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f78d867f83be217a3df489eb04eed54') in 0.014361 seconds
+  Import took 0.016440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/Rocket-1.png
+  artifactKey: Guid(f10e181ea1086c84a8f7ec715c320afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/Rocket-1.png using Guid(f10e181ea1086c84a8f7ec715c320afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2244d42cb89c57d3b150a03fe3fd5f41') in 0.013563 seconds
+  Import took 0.015780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/Explosion-1.png
+  artifactKey: Guid(8dc7cf69f076c3a4ba43a38d96e4ceb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/Explosion-1.png using Guid(8dc7cf69f076c3a4ba43a38d96e4ceb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f78d867f83be217a3df489eb04eed54') in 0.007058 seconds
+  Import took 0.010896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/NEW SRPITES MADE BY VANESSA WUH/Freeze_Explosion-1.png
+  artifactKey: Guid(ae1116e6869c3f04bae42c9936e02a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NEW SRPITES MADE BY VANESSA WUH/Freeze_Explosion-1.png using Guid(ae1116e6869c3f04bae42c9936e02a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64abefd3260365e610afd9219eb08ba9') in 0.012049 seconds
+  Import took 0.015063 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

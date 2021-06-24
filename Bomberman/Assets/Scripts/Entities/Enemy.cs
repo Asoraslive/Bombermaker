@@ -29,7 +29,6 @@ public class Enemy : Entity
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Test");
         if(other.CompareTag("Player"))
         {
             other.GetComponent<Player>().Death();

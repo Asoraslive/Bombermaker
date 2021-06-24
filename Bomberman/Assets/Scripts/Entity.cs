@@ -94,6 +94,9 @@ public class Entity : MonoBehaviour
             if (t > lerpTime) { t = lerpTime; }
             this.transform.position = Vector3.Lerp(startPosition, endPosition, t);
 
+            // SET NEW INHABITED TILE AFTER HALF OF THE WAY
+            if(t > 0.5 && destinationTile != inhabitedTile){ Inhabit(destinationTile); }
+
             // HALT IF FROZEN
             while(isFrozen){ yield return null; }
             yield return null;

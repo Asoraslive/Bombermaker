@@ -43,6 +43,14 @@ public class Entity : MonoBehaviour
         Destroy(this.gameObject);
     }
 
+    public IEnumerator DeathDelayed(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Disinhabit();
+        Destroy(this.gameObject);
+        yield return null;
+    }
+
 
     public List<Entity> GetMates() // Mates are entities on the same tile
     {

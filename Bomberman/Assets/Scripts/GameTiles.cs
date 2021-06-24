@@ -10,6 +10,7 @@ public class GameTiles : MonoBehaviour {
 	private WorldTile tile;
 
 
+
 	private void Awake() 
 	{
 		// CREATE INSTANCE

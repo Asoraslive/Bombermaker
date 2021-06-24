@@ -30,6 +30,13 @@ public class Bomb : Entity
         directions.Add(new Vector3Int(0,-1,0)); // S, 2
         directions.Add(new Vector3Int(-1,0,0)); // W, 3
 
+        // OVERRIDE VALUES IF UPGRADES ARE USED
+        if(GameController.instance.useUpgrades)
+        {
+            explodeStrength = GameController.instance.currentBombStrength;
+            explodeRange = GameController.instance.currentBombRange;
+        }
+
         // INITIATE EXPLODE SEQUENCE
         Explode();
     }

@@ -55,6 +55,11 @@ public class WorldTile {
         return null;
     }
 
+    public List<WorldTile> FindNeighbourTilesInRadius(int radius)
+    {
+        return null;
+    }
+
     public void DebugTile()
     {
         TilemapParent.SetTile(posLocal, null);

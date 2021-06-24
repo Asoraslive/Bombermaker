@@ -101,7 +101,7 @@ MonoBehaviour:
   speed: 1
   explodeDelay: 2
   explodeStrength: 1
-  explodeRange: 1
+  explodeRange: 3
   directions: []
   explosionPrefab: {fileID: 1440641589785580, guid: 713caa736ce7d2f47a4451e7bb5b4fdf,
     type: 3}

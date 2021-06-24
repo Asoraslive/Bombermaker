@@ -58,16 +58,16 @@ public class Bomb : Entity
         }
 
         // OUTER EXPLOSIONS
+        int[] hits = { 0, 0, 0, 0}; // N E S W
         while(i_range <= explodeRange)
         {
-            int[] hits = { 0, 0, 0, 0}; // N E S W
             foreach(Vector3Int dir in directions)
             {
                 // FIND TILE
                 WorldTile targetTile = inhabitedTile.FindNeighbourTileByOffset(dir * i_range);
 
                 // CHECK IF THERE IS A WALL
-                if(targetTile.IsHardBlocked())
+                if(targetTile != null && targetTile.IsHardBlocked())
                 {
                     if      (dir == directions[0]){ hits[0] = explodeStrength; }
                     else if (dir == directions[1]){ hits[1] = explodeStrength; }

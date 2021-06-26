@@ -19,6 +19,7 @@ public class Player : Entity
 
     public void SpawnBomb()
     {
+        Debug.Log(inhabitedTile.posWorld);
         GameObject bomb = Instantiate(bombPrefab, inhabitedTile.posWorld, Quaternion.identity);
     }
 

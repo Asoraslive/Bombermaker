@@ -29,6 +29,10 @@ public class GameController : MonoBehaviour
 
         // SET INITIAL VALUES
         ResetUpgrades();
+
+        //FREEZE GAME
+        Time.timeScale = 0;
+
     }
 
     private void Start() 
@@ -56,6 +60,11 @@ public class GameController : MonoBehaviour
         else if (type == upgrade_bomb_strength){ currentBombStrength += 1; }
         else if (type == upgrade_move_speed){ currentPlayerSpeed *= 1.5f; }
         ApplyUpgrades();
+    }
+
+    public void Play()
+    {
+        Time.timeScale = 1;
     }
     
     public void Win()

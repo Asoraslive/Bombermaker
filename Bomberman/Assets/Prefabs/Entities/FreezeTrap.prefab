@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4664043283338406174}
   m_Layer: 0
   m_Name: FreezeTrap
-  m_TagString: Player
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

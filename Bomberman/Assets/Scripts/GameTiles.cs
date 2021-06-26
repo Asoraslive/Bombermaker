@@ -1,10 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.SceneManagement;
 
 public class GameTiles : MonoBehaviour {
 	public static GameTiles instance;
 	public Tilemap Tilemap;
+	public Tilemap resetTilemap;
 	public Dictionary<Vector3Int, WorldTile> tilesLocal = new Dictionary<Vector3Int, WorldTile>();
     public Dictionary<Vector3, WorldTile> tilesWorld = new Dictionary<Vector3, WorldTile>();
 	private WorldTile tile;
@@ -19,7 +21,8 @@ public class GameTiles : MonoBehaviour {
 
 		// FIND TERRAIN TILEMAP
 		this.Tilemap = GameObject.FindGameObjectWithTag("Terrain").GetComponent<Tilemap>();
-
+		//TO RESET MAP
+		resetTilemap = Tilemap;
 		// SETUP
 		GetWorldTiles();
 	}
@@ -81,5 +84,10 @@ public class GameTiles : MonoBehaviour {
         return Vector3.SqrMagnitude(a - b) < 0.4;
     }
 
+
+	public void resetMap()
+    {
+		SceneManager.LoadScene(0);
+    }
 
 }

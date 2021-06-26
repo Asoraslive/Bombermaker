@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3265794480166208782}
   m_Layer: 0
   m_Name: Exit
-  m_TagString: Player
+  m_TagString: Win
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,4 +98,6 @@ MonoBehaviour:
   isObstacle: 0
   isMoving: 0
   isDestructible: 0
+  isFreezable: 0
+  isFrozen: 0
   speed: 1

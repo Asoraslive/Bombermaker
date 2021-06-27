@@ -2130,6 +2130,16 @@ MonoBehaviour:
   tilemap: {fileID: 1389136686}
   destructible: {fileID: 8714910601699891948, guid: 26a9d8653c51a604aa4721b197aff44f,
     type: 3}
+  LimitExit: 1
+  CurrentExit: 0
+  LimitPowerUp: 16
+  CurrentPowerUp: 0
+  LimitWall: 80
+  CurrentWall: 0
+  LimitTrap: 2
+  CurrentTrap: 0
+  LimitEnemy: 10
+  CurrentEnemy: 0
 --- !u!1001 &398305926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8974,7 +8984,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.628738, g: 0.64047325, b: 0.6698113, a: 1}
   m_Origin: {x: -51, y: -22, z: 0}
   m_Size: {x: 91, y: 51, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}

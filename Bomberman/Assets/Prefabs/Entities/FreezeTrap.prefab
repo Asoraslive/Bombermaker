@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4381065689878668}
   - component: {fileID: 212374711354964286}
   - component: {fileID: 4664043283338406174}
+  - component: {fileID: 3761588463891402795}
   m_Layer: 0
   m_Name: FreezeTrap
   m_TagString: Trap
@@ -106,3 +107,22 @@ MonoBehaviour:
   freezeDuration: 3
   freezePrefab: {fileID: 1440641589785580, guid: 98295232285f1b448b6cd3a849cd1ac6,
     type: 3}
+--- !u!95 &3761588463891402795
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440641589785580}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f40c9773c18b85048ad3f282421f3e3f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

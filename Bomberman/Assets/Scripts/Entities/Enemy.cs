@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : Entity
 {
     private Coroutine moveRoutine;
+    public Animator animator;
     public float startDelay = 1f;
     List<Vector3Int> directions = new List<Vector3Int>();
 
@@ -62,6 +63,7 @@ public class Enemy : Entity
 
     public override void Death()
     {
+        animator.SetBool("Dead", true);
         StopCoroutine(moveRoutine);
         base.Death();
     }

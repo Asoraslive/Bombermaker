@@ -21,6 +21,7 @@ public class GameController : MonoBehaviour
     public float initialPlayerSpeed = 4;
     public int initialBombRange = 1;
 
+    public GameObject winScreenObject;
     private void Awake() 
 	{
 		// MAKE INSTANCE
@@ -69,6 +70,7 @@ public class GameController : MonoBehaviour
     
     public void Win()
     {
+        winScreenObject.SetActive(true);
         Debug.Log("You Win!");
     }
 

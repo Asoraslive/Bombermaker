@@ -7,7 +7,7 @@ public class Enemy : Entity
     private Coroutine moveRoutine;
     public float startDelay = 1f;
     List<Vector3Int> directions = new List<Vector3Int>();
-
+    public Animator death;
     protected override void Awake() 
     {
         // CALL ENTITY'S AWAKE FUNCTION
@@ -63,7 +63,9 @@ public class Enemy : Entity
     public override void Death()
     {
         StopCoroutine(moveRoutine);
-        base.Death();
+        //base.Death();
+        death.SetBool("Dead", true);
+        StartCoroutine(DeathDelayed(0.9f));
     }
 
 

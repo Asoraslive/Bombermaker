@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4381065689878668}
   - component: {fileID: 212374711354964286}
   - component: {fileID: 2749879176021179580}
+  - component: {fileID: -3155940545786124287}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Player
@@ -98,6 +99,8 @@ MonoBehaviour:
   isObstacle: 0
   isMoving: 0
   isDestructible: 0
+  isFreezable: 0
+  isFrozen: 0
   speed: 1
   explodeDelay: 2
   explodeStrength: 1
@@ -105,3 +108,22 @@ MonoBehaviour:
   directions: []
   explosionPrefab: {fileID: 1440641589785580, guid: 713caa736ce7d2f47a4451e7bb5b4fdf,
     type: 3}
+--- !u!95 &-3155940545786124287
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440641589785580}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a54459bdbb3187c4cafe791006ce686c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

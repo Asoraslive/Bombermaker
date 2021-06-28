@@ -9,6 +9,7 @@ public class Player : Entity
 #pragma warning restore 0649
 
     public Animator loose;
+    public Animator death;
 
     protected override void Awake() 
     {
@@ -30,6 +31,8 @@ public class Player : Entity
         InputController.instance.DisableInput();
         GameController.instance.Lose();
         loose.SetTrigger("Loose");
-        base.Death();
+        death.SetBool("Dead",true);
+        //base.Death();
+        StartCoroutine(DeathDelayed(0.6f));
     }
 }

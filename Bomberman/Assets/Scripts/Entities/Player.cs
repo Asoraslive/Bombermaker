@@ -6,7 +6,9 @@ public class Player : Entity
 {
     #pragma warning disable 0649
     public GameObject bombPrefab;
-    #pragma warning restore 0649
+#pragma warning restore 0649
+
+    public Animator loose;
 
     protected override void Awake() 
     {
@@ -27,6 +29,7 @@ public class Player : Entity
     {
         InputController.instance.DisableInput();
         GameController.instance.Lose();
+        loose.SetTrigger("Loose");
         base.Death();
     }
 }

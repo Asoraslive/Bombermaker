@@ -10,6 +10,10 @@ public class ReadyButton : MonoBehaviour
     public GameTiles gametileScript;
 
 
+    /// <summary>
+    /// change wall order so objects cant be seen anymore
+    ///
+    /// </summary>
     public void changeOrderDesWall()
     {
         foreach (var position in tilemap.cellBounds.allPositionsWithin)
@@ -27,7 +31,6 @@ public class ReadyButton : MonoBehaviour
                 {
                     SpriteRenderer render = inhab.GetComponent<SpriteRenderer>();
                     render.sortingOrder = 2;
-                    Debug.Log("Changed Wall @ :" + position);
                 }
             }
         }

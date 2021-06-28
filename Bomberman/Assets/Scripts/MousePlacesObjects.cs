@@ -59,7 +59,7 @@ public class MousePlacesObjects : MonoBehaviour
                 Debug.Log("Can't Place in a Wall");
                 return;
             }
-            else if(inhab == placing)
+            else if(inhab.tag == placing.tag)
             {
                 Debug.Log("There is an Object on this Tile already");
                 return;

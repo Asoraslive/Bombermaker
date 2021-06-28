@@ -16,12 +16,17 @@ public class CurrentWallText : MonoBehaviour
     {
         text = GetComponent<TextMeshProUGUI>();
 
-        if(countObj == "DesWall")
+
+    }
+    // Update is called once per frame
+    public void LateUpdate()
+    {
+        if (countObj == "DesWall")
         {
             currentCount = mouseScript.CurrentWall;
             limitCount = mouseScript.LimitWall;
         }
-        else if(countObj == "Exit")
+        else if (countObj == "Exit")
         {
             currentCount = mouseScript.CurrentExit;
             limitCount = mouseScript.LimitExit;
@@ -41,10 +46,6 @@ public class CurrentWallText : MonoBehaviour
             currentCount = mouseScript.CurrentEnemy;
             limitCount = mouseScript.LimitEnemy;
         }
-    }
-    // Update is called once per frame
-    void LateUpdate()
-    {
-        text.text =  currentCount+" / " + limitCount;
+        text.SetText(currentCount + " / " + limitCount);
     }
 }

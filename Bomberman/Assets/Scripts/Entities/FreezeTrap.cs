@@ -23,7 +23,9 @@ public class FreezeTrap : Entity
         this.isObstacle = true;
 
         // INITIATE EXPLODE SEQUENCE
-        Explode();
+
+            Explode();
+        
     }
 
 

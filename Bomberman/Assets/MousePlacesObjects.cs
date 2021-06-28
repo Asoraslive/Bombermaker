@@ -7,7 +7,6 @@ public class MousePlacesObjects : MonoBehaviour
 {
     public GameTiles gametileScript;
     public Tilemap tilemap;
-    public DestructibleBox destructible;
     public int LimitExit = 1;
     public int CurrentExit = 0;
     public int LimitPowerUp = 16;
@@ -155,6 +154,4 @@ public class MousePlacesObjects : MonoBehaviour
     {
         placing = null;
     }
-
-    
 }

@@ -13,7 +13,7 @@
       "dependencies": {}
     },
     "com.unity.ads": {
-      "version": "3.7.1",
+      "version": "3.6.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -70,15 +70,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.purchasing": {
-      "version": "3.0.2",
+      "version": "2.2.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.ugui": "1.0.0",
-        "com.unity.modules.unityanalytics": "1.0.0",
-        "com.unity.modules.unitywebrequest": "1.0.0",
-        "com.unity.modules.jsonserialize": "1.0.0",
-        "com.unity.modules.androidjni": "1.0.0"
+        "com.unity.ugui": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -103,7 +99,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.4.7",
+      "version": "1.4.6",
       "depth": 0,
       "source": "registry",
       "dependencies": {

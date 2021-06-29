@@ -108,6 +108,7 @@ MonoBehaviour:
   directions: []
   explosionPrefab: {fileID: 1440641589785580, guid: 713caa736ce7d2f47a4451e7bb5b4fdf,
     type: 3}
+  explosion: {fileID: 8300000, guid: 32a37da4137675448826d1ad2cb6e996, type: 3}
 --- !u!95 &-3155940545786124287
 Animator:
   serializedVersion: 3

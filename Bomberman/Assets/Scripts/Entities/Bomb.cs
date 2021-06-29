@@ -12,9 +12,7 @@ public class Bomb : Entity
 
     #pragma warning disable 0649
     public GameObject explosionPrefab;
-#pragma warning restore 0649
-
-    [SerializeField] private AudioClip explosion;
+    #pragma warning restore 0649
 
 
     protected override void Awake() 
@@ -55,10 +53,8 @@ public class Bomb : Entity
         // EXPLODE DELAY
         yield return new WaitForSeconds(explodeDelay);
 
-        AudioSource.PlayClipAtPoint(explosion, Camera.main.transform.position);
-
         // FREEZE DELAY
-        while (isFrozen){ yield return null; }
+        while(isFrozen){ yield return null; }
 
         // PREPARE VARIABLES
         int i_range = 1;

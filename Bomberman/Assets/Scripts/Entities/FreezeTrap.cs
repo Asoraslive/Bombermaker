@@ -13,9 +13,6 @@ public class FreezeTrap : Entity
     public GameObject freezePrefab;
     #pragma warning restore 0649
 
-    [SerializeField] private AudioClip freezeTrapSound;
-    [SerializeField] private AudioClip freezeSound;
-
 
     protected override void Awake() 
     {
@@ -43,8 +40,6 @@ public class FreezeTrap : Entity
         // EXPLODE DELAY
         yield return new WaitForSeconds(explodeDelay);
 
-        AudioSource.PlayClipAtPoint(freezeTrapSound, Camera.main.transform.position);
-
         // PREPARE VARIABLES
         this.GetComponent<SpriteRenderer>().color = new Color(0,0,0,0);
         List<WorldTile> freezees = inhabitedTile.FindNeighbourTilesInRadius(explodeRadius);
@@ -56,7 +51,6 @@ public class FreezeTrap : Entity
             foreach(Entity e in t.inhabitants)
             {
                 if(e.isFreezable){e.Freeze(freezeDuration);}
-                AudioSource.PlayClipAtPoint(freezeSound, Camera.main.transform.position);
             }
         }
 

@@ -107,8 +107,6 @@ MonoBehaviour:
   freezeDuration: 3
   freezePrefab: {fileID: 1440641589785580, guid: 98295232285f1b448b6cd3a849cd1ac6,
     type: 3}
-  freezeTrapSound: {fileID: 8300000, guid: 011fe2795eea09843823af154968d85b, type: 3}
-  freezeSound: {fileID: 8300000, guid: 2b035905ca01b4a46b46673b444894a3, type: 3}
 --- !u!95 &6159100902534515166
 Animator:
   serializedVersion: 3

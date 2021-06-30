@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : Entity
 {
+    [SerializeField] private AudioClip wilhelmSound;
     private Coroutine moveRoutine;
     public float startDelay = 1f;
     List<Vector3Int> directions = new List<Vector3Int>();
@@ -31,6 +32,7 @@ public class Enemy : Entity
     {
         if(other.CompareTag("Player"))
         {
+            AudioSource.PlayClipAtPoint(wilhelmSound, Camera.main.transform.position);
             other.GetComponent<Player>().Death();
         }
     }

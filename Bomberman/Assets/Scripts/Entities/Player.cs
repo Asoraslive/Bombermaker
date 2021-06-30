@@ -11,6 +11,7 @@ public class Player : Entity
     public Animator loose;
     public Animator death;
 
+    [SerializeField] private AudioClip wilhelmSound;
     [SerializeField] private AudioClip loseSound;
 
     protected override void Awake() 
@@ -30,12 +31,20 @@ public class Player : Entity
 
     public override void Death()
     {
+        AudioSource.PlayClipAtPoint(wilhelmSound, Camera.main.transform.position);
         InputController.instance.DisableInput();
         GameController.instance.Lose();
         loose.SetTrigger("Loose");
         death.SetBool("Dead",true);
-        AudioSource.PlayClipAtPoint(loseSound, Camera.main.transform.position);
+        StartCoroutine(PlayDeathSoundDelayed());
         //base.Death();
         StartCoroutine(DeathDelayed(0.6f));
+    }
+
+    private IEnumerator PlayDeathSoundDelayed()
+    {
+        yield return new WaitForSeconds(1.0f);      
+        AudioSource.PlayClipAtPoint(loseSound, Camera.main.transform.position);
+        yield return null;
     }
 }

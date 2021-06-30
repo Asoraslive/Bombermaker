@@ -64,7 +64,12 @@ public class MousePlacesObjects : MonoBehaviour
                 Debug.Log("There is an Object on this Tile already");
                 return;
             }
-            
+
+            else if (inhab is Upgrade && placing.GetComponent<Entity>() is Upgrade)
+            {
+                Debug.Log("There is an Object on this Tile already");
+                return;
+            }
         }
         //
         if (placing) 

@@ -8,7 +8,7 @@ public class ReadyButton : MonoBehaviour
 {
     public Tilemap tilemap;
     public GameTiles gametileScript;
-
+    public GameObject[] prefabs;
 
     /// <summary>
     /// change wall order so objects cant be seen anymore
@@ -25,14 +25,39 @@ public class ReadyButton : MonoBehaviour
 
             // Tile is not empty; do stuff
             WorldTile tile = gametileScript.GetTileByLocalPos(position);
-            foreach(Entity inhab in tile.inhabitants)
+
+            List<Entity> tileInhabs = tile.GetInhabitants();
+            //look for wall
+            foreach(Entity listElement in tileInhabs)
             {
-                if (inhab.CompareTag("DesWall"))
+                DestructibleBox wall;
+                //if is wall 
+                if(listElement.CompareTag("DesWall"))
                 {
-                    SpriteRenderer render = inhab.GetComponent<SpriteRenderer>();
-                    render.sortingOrder = 2;
-                }
+                    wall = (DestructibleBox)listElement;
+                    //get mates and add them to the spawnon death list delete after
+                    List<Entity> mates = listElement.GetMates();
+                    foreach(Entity mate in mates)
+                    {
+                        wall.spawnOnDeath.Add(findPrefabByTag(mate.tag));
+                        mate.Death();
+                    }
+                    //change sorting order
+                    wall.GetComponent<SpriteRenderer>().sortingOrder = 2;
+                }            }
+        }
+    }
+
+    private GameObject findPrefabByTag(string tag)
+    {
+        foreach(GameObject arrayElement in prefabs)
+        {
+            if(arrayElement.tag == tag)
+            {
+                return arrayElement;
             }
         }
+
+        return null;
     }
 }

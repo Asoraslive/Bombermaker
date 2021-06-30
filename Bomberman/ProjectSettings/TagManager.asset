@@ -8,10 +8,13 @@ TagManager:
   - Wall
   - GameLogic
   - DesWall
-  - PowerUp
   - Trap
   - Enemy
   - Win
+  - PowerUpRange
+  - PowerUpStrength
+  - PowerUpSpeed
+  - PowerUp
   layers:
   - Default
   - TransparentFX

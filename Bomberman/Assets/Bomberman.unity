@@ -14194,6 +14194,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilemap: {fileID: 1389136686}
   gametileScript: {fileID: 392315524}
+  prefabs:
+  - {fileID: 1440641589785580, guid: 4f2fcbea4f41d5c4a9e0538c3c288894, type: 3}
+  - {fileID: 1440641589785580, guid: 26a9d8653c51a604aa4721b197aff44f, type: 3}
+  - {fileID: 1440641589785580, guid: 46c5a96251a6ded44aabf72f9ab11d69, type: 3}
+  - {fileID: 1440641589785580, guid: 16aa28cde21bc444cb21c468a678a99f, type: 3}
+  - {fileID: 1440641589785580, guid: 2953b66bbf4a9ca419edca46c08efd39, type: 3}
+  - {fileID: 1440641589785580, guid: 6df44633a45208b479bc0c711012ee46, type: 3}
+  - {fileID: 1440641589785580, guid: 3ef047ff34a949043841777a386e9f15, type: 3}
+  - {fileID: 1440641589785580, guid: a4fc380c4ffaa1547bdbab56028a9b29, type: 3}
 --- !u!1001 &1942283036
 PrefabInstance:
   m_ObjectHideFlags: 0

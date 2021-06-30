@@ -90,7 +90,7 @@ public class MousePlacesObjects : MonoBehaviour
                     Debug.Log("Limit Reached");
                 }
             }
-            else if (placing.CompareTag("PowerUp"))
+            else if (placing.CompareTag("PowerUpRange")|| placing.CompareTag("PowerUpStrength")|| placing.CompareTag("PowerUpSpeed"))
             {
                 if (CurrentPowerUp < LimitPowerUp)
                 {

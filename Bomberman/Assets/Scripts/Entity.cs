@@ -11,6 +11,7 @@ public class Entity : MonoBehaviour
     public bool isFreezable = false;
     public bool isFrozen = false;
     public float speed = 1f;
+    public bool isDead = false;
 
 
     protected virtual void Awake() 
@@ -107,7 +108,7 @@ public class Entity : MonoBehaviour
 
         // ENABLE NEW MOVEMENT
         isMoving = false;
-        if(this is Player) InputController.instance.EnableInput();
+        if(this is Player && !this.isDead) InputController.instance.EnableInput();
         yield return null;
     }
 

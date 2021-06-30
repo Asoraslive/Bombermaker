@@ -47,6 +47,7 @@ public class AudioController : MonoBehaviour
 
             if(c == bomb){ source.volume = 0.6f; }
             if(c == freeze){ source.volume = 0.7f; }
+            if(c == lose){ source.volume = 0.5f; }
             if(c == music){ source.volume = 0.04f; source.loop = true; }
         }
 

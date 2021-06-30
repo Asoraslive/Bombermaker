@@ -31,6 +31,7 @@ public class Player : Entity
 
     public override void Death()
     {
+        isDead = true;
         AudioController.instance.PlayClip(AudioController.instance.wilhelm);
         InputController.instance.DisableInput();
         GameController.instance.Lose();

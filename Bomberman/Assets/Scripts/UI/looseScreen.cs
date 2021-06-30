@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class looseScreen : MonoBehaviour
 {
+   
     public Animator anim;
    public void looseGame()
     {

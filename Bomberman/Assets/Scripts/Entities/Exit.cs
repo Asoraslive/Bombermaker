@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Exit : Entity
 {
+    [SerializeField] private AudioClip victorySound;
     protected override void Awake() 
     {
         // CALL ENTITY'S AWAKE FUNCTION
@@ -18,6 +19,7 @@ public class Exit : Entity
     {
         if(e is Player)
         {
+            AudioSource.PlayClipAtPoint(victorySound, Camera.main.transform.position);
             GameController.instance.Win();
         }
         base.OnMateEnter(e);

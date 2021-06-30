@@ -106,6 +106,7 @@ MonoBehaviour:
   bombPrefab: {fileID: 1440641589785580, guid: 4a4eb0ba6f5dd124d9a94ee354690f9e, type: 3}
   loose: {fileID: 0}
   death: {fileID: -3673727927471481684}
+  loseSound: {fileID: 8300000, guid: c47c8252e457702499560c332792f536, type: 3}
 --- !u!61 &41764149
 BoxCollider2D:
   m_ObjectHideFlags: 0

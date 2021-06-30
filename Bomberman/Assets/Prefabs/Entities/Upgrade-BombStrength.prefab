@@ -102,3 +102,4 @@ MonoBehaviour:
   isFrozen: 0
   speed: 1
   type: BombStrength
+  upgradeSound: {fileID: 8300000, guid: 128311dc87f996f45b160d76440dcc7d, type: 3}

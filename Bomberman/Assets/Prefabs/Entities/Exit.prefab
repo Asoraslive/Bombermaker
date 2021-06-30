@@ -101,3 +101,4 @@ MonoBehaviour:
   isFreezable: 0
   isFrozen: 0
   speed: 1
+  victorySound: {fileID: 8300000, guid: 084050a77a81133419b07dab85afe54a, type: 3}

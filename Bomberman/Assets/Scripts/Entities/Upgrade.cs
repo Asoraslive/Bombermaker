@@ -5,6 +5,8 @@ using UnityEngine;
 public class Upgrade : Entity
 {
     public string type;
+    [SerializeField] private AudioClip upgradeSound;
+
     protected override void Awake() 
     {
         // CALL ENTITY'S AWAKE FUNCTION
@@ -19,6 +21,7 @@ public class Upgrade : Entity
     {
         if(e is Player)
         {
+            AudioController.instance.PlayClip(AudioController.instance.powerup);
             GameController.instance.Upgrade(type);
             StartCoroutine(this.DeathDelayed(0.05f));
         }

@@ -1319,6 +1319,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 392315529}
+        m_TargetAssemblyTypeName: ButtenPressSound, Assembly-CSharp
+        m_MethodName: ButtenSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &163176692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2843,6 +2855,8 @@ GameObject:
   - component: {fileID: 392315526}
   - component: {fileID: 392315527}
   - component: {fileID: 392315528}
+  - component: {fileID: 392315529}
+  - component: {fileID: 392315530}
   m_Layer: 0
   m_Name: GameLogic
   m_TagString: Untagged
@@ -2935,6 +2949,40 @@ MonoBehaviour:
   CurrentTrap: 0
   LimitEnemy: 10
   CurrentEnemy: 0
+--- !u!114 &392315529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392315523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe411cfcff3b44a40825ba25f89032a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttenPressSound: {fileID: 8300000, guid: d278000b33cacdb4bab9b0422884ea01, type: 3}
+--- !u!114 &392315530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392315523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69f2561f003d1874cb00b9ae80784a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  freeze: {fileID: 8300000, guid: 1dd8388e63b983541a739201debec76e, type: 3}
+  ice: {fileID: 8300000, guid: 89699952128138649a581ec9b9945dce, type: 3}
+  button: {fileID: 8300000, guid: d278000b33cacdb4bab9b0422884ea01, type: 3}
+  powerup: {fileID: 8300000, guid: 2608875e40aa1634597cbcb2dc053882, type: 3}
+  win: {fileID: 8300000, guid: 9a0674ee90281d44d87a96b4e139132a, type: 3}
+  lose: {fileID: 8300000, guid: c47c8252e457702499560c332792f536, type: 3}
+  wilhelm: {fileID: 8300000, guid: 48cd8fccd85fdc4408657b6c65ee3e61, type: 3}
+  bomb: {fileID: 8300000, guid: 32a37da4137675448826d1ad2cb6e996, type: 3}
+  music: {fileID: 8300000, guid: 8104d4262692242c89d40fc0714aa56d, type: 3}
 --- !u!1001 &398305926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3689,6 +3737,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 392315529}
+        m_TargetAssemblyTypeName: ButtenPressSound, Assembly-CSharp
+        m_MethodName: ButtenSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &534107822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4345,6 +4405,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 392315529}
+        m_TargetAssemblyTypeName: ButtenPressSound, Assembly-CSharp
+        m_MethodName: ButtenSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &625114906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4551,6 +4623,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 1440641589785580, guid: 46c5a96251a6ded44aabf72f9ab11d69,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 392315529}
+        m_TargetAssemblyTypeName: ButtenPressSound, Assembly-CSharp
+        m_MethodName: ButtenSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -10912,6 +10996,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 392315529}
+        m_TargetAssemblyTypeName: ButtenPressSound, Assembly-CSharp
+        m_MethodName: ButtenSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1389565268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13547,6 +13643,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 392315529}
+        m_TargetAssemblyTypeName: ButtenPressSound, Assembly-CSharp
+        m_MethodName: ButtenSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1886391206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13815,6 +13923,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 392315529}
+        m_TargetAssemblyTypeName: ButtenPressSound, Assembly-CSharp
+        m_MethodName: ButtenSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1921855300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14066,6 +14186,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1938095567}
         m_TargetAssemblyTypeName: ReadyButton, Assembly-CSharp
         m_MethodName: changeOrderDesWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 392315529}
+        m_TargetAssemblyTypeName: ButtenPressSound, Assembly-CSharp
+        m_MethodName: ButtenSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14424,7 +14556,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1975141643}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 392315529}
+        m_TargetAssemblyTypeName: ButtenPressSound, Assembly-CSharp
+        m_MethodName: ButtenSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1975141643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14995,6 +15139,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 1440641589785580, guid: 4f2fcbea4f41d5c4a9e0538c3c288894,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 392315529}
+        m_TargetAssemblyTypeName: ButtenPressSound, Assembly-CSharp
+        m_MethodName: ButtenSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

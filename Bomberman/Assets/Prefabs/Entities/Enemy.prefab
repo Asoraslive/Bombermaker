@@ -103,6 +103,7 @@ MonoBehaviour:
   isFreezable: 0
   isFrozen: 0
   speed: 0.75
+  wilhelmSound: {fileID: 8300000, guid: 48cd8fccd85fdc4408657b6c65ee3e61, type: 3}
   startDelay: 0.75
   death: {fileID: 8257861285329945940}
 --- !u!61 &752725584

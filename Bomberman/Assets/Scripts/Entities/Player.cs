@@ -11,6 +11,9 @@ public class Player : Entity
     public Animator loose;
     public Animator death;
 
+    [SerializeField] private AudioClip wilhelmSound;
+    [SerializeField] private AudioClip loseSound;
+
     protected override void Awake() 
     {
         //CALL ENTITY'S AWAKE FUNCTION
@@ -28,11 +31,13 @@ public class Player : Entity
 
     public override void Death()
     {
+        AudioController.instance.PlayClip(AudioController.instance.wilhelm);
         InputController.instance.DisableInput();
         GameController.instance.Lose();
         loose.SetTrigger("Loose");
         death.SetBool("Dead",true);
-        //base.Death();
+        StartCoroutine(AudioController.instance.PlayClipDelayed(AudioController.instance.lose, 0.6f));
         StartCoroutine(DeathDelayed(0.6f));
     }
+
 }

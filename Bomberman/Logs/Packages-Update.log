@@ -51,7 +51,11 @@ The following packages were added:
   com.unity.ugui@1.0.0
   com.unity.xr.legacyinputhelpers@2.1.7
 
+<<<<<<< HEAD
 === Tue Jun 29 09:14:47 2021
+=======
+=== Tue Jun 29 16:21:46 2021
+>>>>>>> luisa
 
 Packages were changed.
 Update Mode: updateDependencies

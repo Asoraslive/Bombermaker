@@ -76,7 +76,7 @@ public class GameTiles : MonoBehaviour {
         }
         
 		// COULD NOT FIND TILE
-		Debug.LogError("An Entity could not find a tile to inhabit!");
+		// Debug.LogError("An Entity could not find a tile to inhabit!");
         return null;
     }
 

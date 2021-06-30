@@ -21,7 +21,7 @@ public class Upgrade : Entity
     {
         if(e is Player)
         {
-            AudioSource.PlayClipAtPoint(upgradeSound, Camera.main.transform.position);
+            AudioController.instance.PlayClip(AudioController.instance.powerup);
             GameController.instance.Upgrade(type);
             StartCoroutine(this.DeathDelayed(0.05f));
         }

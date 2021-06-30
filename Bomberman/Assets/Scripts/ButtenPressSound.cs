@@ -8,6 +8,6 @@ public class ButtenPressSound : MonoBehaviour
     // Start is called before the first frame update
     public void ButtenSound()
     {
-        AudioSource.PlayClipAtPoint(buttenPressSound, Camera.main.transform.position);
+        AudioController.instance.PlayClip(AudioController.instance.button);
     }
 }

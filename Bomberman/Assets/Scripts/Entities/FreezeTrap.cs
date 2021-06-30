@@ -43,7 +43,7 @@ public class FreezeTrap : Entity
         // EXPLODE DELAY
         yield return new WaitForSeconds(explodeDelay);
 
-        AudioSource.PlayClipAtPoint(freezeTrapSound, Camera.main.transform.position);
+        AudioController.instance.PlayClip(AudioController.instance.freeze);
 
         // PREPARE VARIABLES
         this.GetComponent<SpriteRenderer>().color = new Color(0,0,0,0);
@@ -56,7 +56,7 @@ public class FreezeTrap : Entity
             foreach(Entity e in t.inhabitants)
             {
                 if(e.isFreezable){e.Freeze(freezeDuration);}
-                AudioSource.PlayClipAtPoint(freezeSound, Camera.main.transform.position);
+                AudioController.instance.PlayClip(AudioController.instance.ice);
             }
         }
 

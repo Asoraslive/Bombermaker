@@ -19,7 +19,7 @@ public class Exit : Entity
     {
         if(e is Player)
         {
-            AudioSource.PlayClipAtPoint(victorySound, Camera.main.transform.position);
+            AudioController.instance.PlayClip(AudioController.instance.win);
             GameController.instance.Win();
         }
         base.OnMateEnter(e);

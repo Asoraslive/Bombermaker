@@ -55,7 +55,7 @@ public class Bomb : Entity
         // EXPLODE DELAY
         yield return new WaitForSeconds(explodeDelay);
 
-        AudioSource.PlayClipAtPoint(explosion, Camera.main.transform.position);
+        AudioController.instance.PlayClip(AudioController.instance.bomb);
 
         // FREEZE DELAY
         while (isFrozen){ yield return null; }

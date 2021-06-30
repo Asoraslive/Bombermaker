@@ -31,20 +31,13 @@ public class Player : Entity
 
     public override void Death()
     {
-        AudioSource.PlayClipAtPoint(wilhelmSound, Camera.main.transform.position);
+        AudioController.instance.PlayClip(AudioController.instance.wilhelm);
         InputController.instance.DisableInput();
         GameController.instance.Lose();
         loose.SetTrigger("Loose");
         death.SetBool("Dead",true);
-        StartCoroutine(PlayDeathSoundDelayed());
-        //base.Death();
+        StartCoroutine(AudioController.instance.PlayClipDelayed(AudioController.instance.lose, 0.6f));
         StartCoroutine(DeathDelayed(0.6f));
     }
 
-    private IEnumerator PlayDeathSoundDelayed()
-    {
-        yield return new WaitForSeconds(1.0f);      
-        AudioSource.PlayClipAtPoint(loseSound, Camera.main.transform.position);
-        yield return null;
-    }
 }

@@ -32,7 +32,7 @@ public class Enemy : Entity
     {
         if(other.CompareTag("Player"))
         {
-            AudioSource.PlayClipAtPoint(wilhelmSound, Camera.main.transform.position);
+            AudioController.instance.PlayClip(AudioController.instance.wilhelm);
             other.GetComponent<Player>().Death();
         }
     }
